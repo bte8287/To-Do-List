@@ -46,7 +46,7 @@ const List = mongoose.model("List", listSchema);
 
 //console.log(date());
 const app = express();
-const port = 3000;
+//const port = 3000;
 //const workItems = [];
 //const items = ["Buy Food", "Cook Food", "Eat Food"];
 
@@ -161,6 +161,11 @@ app.get("/:customListName", function(req, res) {
 app.get("/about", function(req, res) {
   res.render("about");
 });
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
 
 app.listen(port, function() {
   console.log(`Server started on port: ${port}`);

@@ -10,7 +10,7 @@ const _ = require("lodash");
 //"mongodb://localhost:27017/todolistDB"
 
 //atlas connection
-mongoose.connect("mongodb+srv://admin-brandon:Hello123@cluster0.ibykm.mongodb.net/todoListDB", {
+mongoose.connect("mongodb+srv://admin-brandon:<_password_>@cluster0.ibykm.mongodb.net/todoListDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false
